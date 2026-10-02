@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>إنجاز — خطة ١٢ أسبوعاً</title>
+  <meta name="description" content="إنجاز: حقق أهدافك من خلال خطة ١٢ أسبوعاً مع متابعة يومية وتنبيهات وتوثيق.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" width="36" height="36">
+      <div>
+        <h1>إنجاز</h1>
+        <small id="weekBadge">خطة ١٢ أسبوعاً</small>
+      </div>
+    </div>
+    <button class="icon-btn" id="bellBtn" title="التنبيهات" aria-label="التنبيهات">🔔</button>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <main id="view"></main>
+
+  <nav class="tabs" role="tablist">
+    <button data-tab="today" class="active"><span>☀️</span>اليوم</button>
+    <button data-tab="week"><span>🗓️</span>الأسبوع</button>
+    <button data-tab="goals"><span>🎯</span>الأهداف</button>
+    <button data-tab="report"><span>📊</span>التوثيق</button>
+    <button data-tab="settings"><span>⚙️</span>الإعدادات</button>
+  </nav>
+
+  <dialog id="dlg">
+    <form method="dialog" id="dlgForm">
+      <h3 id="dlgTitle"></h3>
+      <div id="dlgBody"></div>
+      <div class="dlg-actions">
+        <button value="cancel" class="btn ghost" formnovalidate>إلغاء</button>
+        <button value="ok" class="btn primary" id="dlgOk">حفظ</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "إنجاز — خطة ١٢ أسبوعاً",
+  "short_name": "إنجاز",
+  "description": "حقق أهدافك من خلال خطة ١٢ أسبوعاً مع متابعة يومية وتنبيهات وتوثيق.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0fdfa",
+  "theme_color": "#0f766e",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
